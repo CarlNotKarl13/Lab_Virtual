@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Flask App</title>
+</head>
+<body>
+    <h1>Hello, Flask!</h1>
+    <p>This is a simple Flask app with an HTML template.</p>
+       <!-- Add a div element to display Plotly content -->
+       {{ plot_div | safe }} 
+       {{ form.hidden_tag() }}
+       {{ form.slider.label(class="form-label") }}
+       {{ form.slider(class="form-control") }}
+       <label for="a_slider">A:</label>
+       <input type="range" id="a_slider" name="a_slider" min="0" max="1" step="0.01" value="{{ a_slider_value }}">
+       <span id="a_slider_value">{{ a_slider_value }}</sp
+</body>
+</html>
